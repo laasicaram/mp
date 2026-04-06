@@ -1,0 +1,6 @@
+.venv/
+.pycache/
+__pycache__/
+qa_model/
+*.pyc
+.DS_Store
