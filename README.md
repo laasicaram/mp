@@ -15,6 +15,7 @@ This project fine-tunes a lightweight question answering model on the HotpotQA d
 - `train_hotpotqa.py`: trains the model
 - `predict.py`: runs question answering from the terminal
 - `requirements.txt`: Python dependencies
+- `qa_model/`: trained extractive QA model files
 
 ## Setup
 
@@ -37,6 +38,11 @@ pip install -r requirements.txt
 ```
 
 This saves the best QA model to `qa_model/`.
+
+## Dataset
+
+- HotpotQA Kaggle link: https://www.kaggle.com/datasets/jeromeblanchet/hotpotqa-question-answering-dataset
+- The repository includes the trained `qa_model/`, but not the raw dataset files.
 
 ## Interactive Question Answering
 
@@ -62,6 +68,6 @@ Usage flow:
 
 ## Notes
 
-- The repository excludes the trained `qa_model/` directory from GitHub.
-- Train locally first before running interactive prediction.
+- The trained `qa_model/` directory is included in this repository.
+- If you want to retrain, download or stream the dataset using the Kaggle link or Hugging Face.
 - The model answers questions by extracting an answer span from the provided context.
